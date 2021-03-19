@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            border: 1px black solid;
+            padding: 1em;
+        }
+        
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .wrapper {
+            max-width: 60em;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .fake-img {
+            height: 125px;
+            width: 125px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 50%;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        main {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .header-img {
+            height:200px;
+            background: linear-gradient(90deg, rgb(222, 244, 251), rgb(214, 255, 234));
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .header-img h1 {
+            margin: 0;
+            padding: 1rem;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="sidebar">
+            <div class="profile">
+                <!-- <img src="" alt=""> -->
+                <div class="fake-img"></div>
+                <h3>Ian Martin</h3>
+            </div>
+            
+            <nav>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </nav>
+        </div>
+        
+        <main>
+            <div class="header-img">
+                <h1>Page name</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem modi impedit omnis quaerat incidunt rem ea mollitia cumque doloribus culpa iste a placeat, quae saepe quis, porro recusandae in?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem modi impedit omnis quaerat incidunt rem ea mollitia cumque doloribus culpa iste a placeat, quae saepe quis, porro recusandae in?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem modi impedit omnis quaerat incidunt rem ea mollitia cumque doloribus culpa iste a placeat, quae saepe quis, porro recusandae in?</p>
+        </main>
+        
+    </div>
+
+</body>
+
+</html>

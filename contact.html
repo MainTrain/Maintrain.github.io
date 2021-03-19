@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Martin | Contact </title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/fa.css">
+    <script src="https://kit.fontawesome.com/ed7b1e6505.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container max-width row">
+            
+            <a class="logo" href="index.html">
+                Ian Martin
+                <img id="portrait" />
+            </a>
+            <ul class="row">
+                <li><a class="btn" href="about.html">About</a></li>
+                <li><a class="btn" href="academic.html">Academic Projects</a></li>
+                <li><a class="btn" href="personal.html">Personal Projects</a></li>
+                <li><a class="btn" href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container fullheight">
+            <h1 class="title">Contact Me</h1>
+            <a href="https://www.linkedin.com/in/ian-martin1/"><i class="btn icon-btn fab fa-linkedin"></i></a><br>
+            <span>ianmartian13@gmail.com</span>
+            <form>
+                <label>
+                    Subject
+                </label>
+                <input id="contactSubject" type="text">
+
+                <label>
+                    Message
+                </label>
+                <textarea id="contactMessage" type="text"></textarea>
+                <button class="btn"> Send </button>
+            </form>
+    </main>
+
+    <script>
+
+        // contact functionality
+        function sendEmail() {
+            var contactSubject = document.getElementById('contactSubject');
+            var contactMessage = document.getElementById('contactMessage');
+
+            // opening the email app to send the contents of the message
+            window.open(`mailto:ianmartian13@gmail.com?subject=${contactSubject.value}&body=${contactMessage.value}`)
+
+            // clearing out the form
+            contactSubject.value = "";
+            contactMessage.value = "";
+        }
+    </script>
+
+</body>
+
+</html>
