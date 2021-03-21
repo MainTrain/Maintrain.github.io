@@ -171,7 +171,7 @@ nav {
 /* main */
 
 main {
-    padding: 1em;
+    padding: 1rem;
     flex: 1;
     font-size: 1.3em;
 }
@@ -242,6 +242,48 @@ textarea {
     font-size: 16pt
 }
 
+
+/* SLIDESHOW */
+
+.slideshow {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 300px;
+}
+
+.slideshow img {
+    object-fit: contain;
+}
+
+.slide {
+    display: none;
+}
+
+.slideshow-btn-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.slideshow-btn-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 2em;
+    border-radius: 1em 1em 0 0;
+    ;
+}
+
 @media only screen and (min-width: 850px) {
     #home-content {
         text-align: left;
@@ -304,5 +346,12 @@ textarea {
     }
     .reverse {
         flex-direction: row-reverse;
+    }
+    .slideshow {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 500px;
     }
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Martin | Home</title>
+    <link rel="stylesheet" href="static/style2.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div id="fixednav">
+                <a class="logo portrait-hover" href="index.html">
+                    <h1 class="lobster"> Ian Martin </h1>
+                    <img id="portrait" />
+                </a>
+                <button onclick="toggleMenu()" id="menutoggle">
+                    ☰
+                </button>
+            </div>
+
+
+            <ul id="navLinks">
+                <li><a class="navLink" href="about.html">About</a></li>
+                <li><a class="navLink" href="academic.html">Academic Projects</a></li>
+                <li><a class="navLink" href="personal.html">Personal Projects</a></li>
+                <li><a class="navLink" href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="slideshow">
+            <img class="slide" src="static/firewall.png" alt="">
+            <img class="slide" src="static/BigFish.jpg" alt="">
+            <img class="slide" src="static/beegfoot.jpg" alt="">
+
+            <div class="indicator"></div>
+            <button onclick="plusDivs(-1)" class="btn slideshow-btn-left">&#10094;</button>
+            <button onclick="plusDivs(1)" class="btn slideshow-btn-right">&#10095;</button>
+        </div>
+    </main>
+
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
