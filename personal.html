@@ -6,120 +6,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ian Martin | Personal Projects</title>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/style2.css">
 </head>
 
 <body>
     <nav>
-        <div class="container max-width row">
+        <div class="container">
+            <div id="fixednav">
+                <a class="logo portrait-hover" href="index.html">
+                    <h1 class="lobster"> Ian Martin </h1>
+                    <img id="portrait" />
+                </a>
+                <button onclick="toggleMenu()" id="menutoggle">
+                    ☰
+                </button>
+            </div>
 
-            <a class="logo" href="index.html">
-                Ian Martin
-                <img id="portrait" />
-            </a>
-            <ul class="row">
-                <li><a class="btn" href="about.html">About</a></li>
-                <li><a class="btn" href="academic.html">Academic Projects</a></li>
-                <li><a class="btn" href="personal.html">Personal Projects</a></li>
-                <li><a class="btn" href="contact.html">Contact Me</a></li>
+
+            <ul id="navLinks">
+                <li><a class="navLink" href="about.html">About</a></li>
+                <li><a class="navLink" href="academic.html">Academic Projects</a></li>
+                <li><a class="navLink" href="personal.html">Personal Projects</a></li>
+                <li><a class="navLink" href="contact.html">Contact Me</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <div class="container fullheight">
+        <div class="container">
             <h1 class="title">Personal Projects</h1>
 
-            <article>
-                <h2>3D Printing</h2>
-                <div class="row justify-center">
-                    <figure>
-                        <div class="fake-img"></div>
-                        <figcaption>caption for the image</figcaption>
-
-                    </figure>
+            <section class="split reverse">
+                <div>
+                    <img src="static/firewall.png" alt="">
                 </div>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore tempora repudiandae cumque ipsam animi enim possimus pariatur, sapiente nemo minima voluptatum maiores laboriosam porro, error sit dignissimos optio quibusdam dicta!</p>
-            </article>
-
-
-            <article>
-                <h2>Photography</h2>
-                <div class="row justify-center">
-                    <figure>
-                        <!-- <img src="" alt="an image"> -->
-                        <div class="fake-img"></div>
-                        <figcaption>caption for the image</figcaption>
-                    </figure>
+                <div>
+                    <h2> Photography </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur enim esse aliquam, sed ipsam, sunt accusantium quia animi recusandae nulla itaque perspiciatis voluptatum voluptate quae iste provident nihil amet sequi?
+                        Praesentium magnam dolor necessitatibus iusto nulla consequatur perferendis facilis delectus commodi repellendus, enim minus sapiente ad corrupti reiciendis expedita esse maxime ex quis repudiandae labore voluptate neque aliquid
+                        eligendi. Id deserunt veniam sunt, odit expedita sapiente iusto ad? Quod earum, quo eligendi nostrum tempore aperiam consequuntur reprehenderit eum doloremque ad magnam quibusdam deserunt excepturi dignissimos sint molestiae corrupti
+                        ab modi aut optio ipsam doloribus porro tempora quasi. Esse, dicta.</p>
                 </div>
-
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-            </article>
-
-            <article>
-                <h2>Audio</h2>
-                <div class="row justify-center">
-                    <figure>
-                        <!-- <img src="" alt="an image"> -->
-                        <div class="fake-img "></div>
-                        <figcaption>caption for the image</figcaption>
-                    </figure>
+            </section>
+            <hr>
+            <section class="split">
+                <div>
+                    <img src="static/BigFish.jpg" alt="">
                 </div>
+                <div>
+                    <h2>3D Printing</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur enim esse aliquam, sed ipsam, sunt accusantium quia animi recusandae nulla itaque perspiciatis voluptatum voluptate quae iste provident nihil amet sequi?
+                        Praesentium magnam dolor necessitatibus iusto nulla consequatur perferendis facilis delectus commodi repellendus, enim minus sapiente ad corrupti reiciendis expedita esse maxime ex quis repudiandae labore voluptate neque aliquid
+                        eligendi. Id deserunt veniam sunt, odit expedita sapiente iusto ad? Quod earum, quo eligendi nostrum tempore aperiam consequuntur reprehenderit eum doloremque ad magnam quibusdam deserunt excepturi dignissimos sint molestiae corrupti
+                        ab modi aut optio ipsam doloribus porro tempora quasi. Esse, dicta.</p>
+                </div>
+            </section>
+            <hr>
+            <section class="split reverse">
+                <div>
+                    <img src="static/bigfish.jpg" alt="">
+                </div>
+                <div>
+                    <h2>Audio</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur enim esse aliquam, sed ipsam, sunt accusantium quia animi recusandae nulla itaque perspiciatis voluptatum voluptate quae iste provident nihil amet sequi?
+                        Praesentium magnam dolor necessitatibus iusto nulla consequatur perferendis facilis delectus commodi repellendus, enim minus sapiente ad corrupti reiciendis expedita esse maxime ex quis repudiandae labore voluptate neque aliquid
+                        eligendi. Id deserunt veniam sunt, odit expedita sapiente iusto ad? Quod earum, quo eligendi nostrum tempore aperiam consequuntur reprehenderit eum doloremque ad magnam quibusdam deserunt excepturi dignissimos sint molestiae corrupti
+                        ab modi aut optio ipsam doloribus porro tempora quasi. Esse, dicta.</p>
+                    <table>
+                        <caption>Audio Equipment</caption>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Where to buy</th>
+                        </tr>
+                        <tr>
+                            <td>Motu M2</td>
+                            <td>b</td>
+                            <td> <a href="https://www.sweetwater.com/store/detail/M2--motu-m2-2x2-usb-c-audio-interface">Sweetwater</a></td>
+                        </tr>
+                        <tr>
+                            <td>Geshelli Labs Erish</td>
+                            <td>b</td>
+                            <td><a href="https://geshelli.com/shop/ols/products/erish-balanced">Geshelli</a> </td>
+                        </tr>
+                        <tr>
+                            <td>HarmonicDyne Helios</td>
+                            <td>b</td>
+                            <td><a href="https://www.linsoul.com/products/harmonicdyne-helios-dynamic-headphone"> LinSoul</a></td>
+                        </tr>
+                        <tr>
+                            <td>Koss KPH30i</td>
+                            <td>b</td>
+                            <td><a href="https://www.amazon.com/Koss-KPH30ik-Headphones-Microphone-Lightweight/dp/B07GJVJTD5?th=1"> Amazon</a></td>
+                        </tr>
+                        <tr>
+                            <td>Beyerdynamic DT990</td>
+                            <td>b</td>
+                            <td><a href="https://www.amazon.com/beyerdynamic-Over-Ear-Studio-Headphones-construction/dp/B0011UB9CQ"> Amazon</a></td>
+                        </tr>
+                        <tr>
+                            <td>Triangle Borea BR02</td>
+                            <td>b</td>
+                            <td><a href="https://www.adorama.com/triborteb34b.html"> Adorama</a></td>
+                        </tr>
+                        <tr>
+                            <td>Yamaha RX-A550</td>
+                            <td>b</td>
+                            <td><a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=yamaha+Rx+a550&_sacat=0">Ebay</a></td>
+                        </tr>
+                        <tr>
+                            <td>Teac TN-300</td>
+                            <td>b</td>
+                            <td><a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=tn300&_sacat=0"> Ebay</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore tempora repudiandae cumque ipsam animi enim possimus pariatur, sapiente nemo minima voluptatum maiores laboriosam porro, error sit dignissimos optio quibusdam dicta!</p>
-                <table>
-                    <caption>Audio Equipment</caption>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Where to buy</th>
-                    </tr>
-                    <tr>
-                        <td>Motu M2</td>
-                        <td>b</td>
-                        <td> <a href="https://www.sweetwater.com/store/detail/M2--motu-m2-2x2-usb-c-audio-interface">Sweetwater</a></td>
-                    </tr>
-                    <tr>
-                        <td>Geshelli Labs Erish</td>
-                        <td>b</td>
-                        <td><a href="https://geshelli.com/shop/ols/products/erish-balanced">Geshelli</a> </td>
-                    </tr>
-                    <tr>
-                        <td>HarmonicDyne Helios</td>
-                        <td>b</td>
-                        <td><a href="https://www.linsoul.com/products/harmonicdyne-helios-dynamic-headphone"> LinSoul</a></td>
-                    </tr>
-                    <tr>
-                        <td>Koss KPH30i</td>
-                        <td>b</td>
-                        <td><a href="https://www.amazon.com/Koss-KPH30ik-Headphones-Microphone-Lightweight/dp/B07GJVJTD5?th=1"> Amazon</a></td>
-                    </tr>
-                    <tr>
-                        <td>Beyerdynamic DT990</td>
-                        <td>b</td>
-                        <td><a href="https://www.amazon.com/beyerdynamic-Over-Ear-Studio-Headphones-construction/dp/B0011UB9CQ"> Amazon</a></td>
-                    </tr>
-                    <tr>
-                        <td>Triangle Borea BR02</td>
-                        <td>b</td>
-                        <td><a href="https://www.adorama.com/triborteb34b.html"> Adorama</a></td>
-                    </tr>
-                    <tr>
-                        <td>Yamaha RX-A550</td>
-                        <td>b</td>
-                        <td><a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=yamaha+Rx+a550&_sacat=0">Ebay</a></td>
-                    </tr>
-                    <tr>
-                        <td>Teac TN-300</td>
-                        <td>b</td>
-                        <td><a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=tn300&_sacat=0"> Ebay</a></td>
-                    </tr>
-                </table>
-            </article>
         </div>
     </main>
 
+
+    <script src="static/script.js"></script>
 </body>
 
 </html>

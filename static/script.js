@@ -5,6 +5,11 @@ function toggleMenu() {
     navLinks.style.display = (navLinks.style.display === "flex") ? "none" : "flex";
 }
 
+window.onresize = () => {
+    let navlinks = document.getElementById("navLinks");
+    if (navlinks.style.display != "flex") navlinks.style.display = "flex";
+}
+
 
 var portraitHovers = document.querySelectorAll('.portrait-hover');
 var portrait = document.getElementById("portrait");

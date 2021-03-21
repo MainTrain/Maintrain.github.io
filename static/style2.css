@@ -13,7 +13,6 @@
 
 * {
     box-sizing: border-box;
-    text-decoration: none;
     font-family: sans-serif;
 }
 
@@ -36,7 +35,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .btn {
@@ -46,6 +45,7 @@ img {
     border-radius: 2em;
     white-space: nowrap;
     transition: ease 0.2s;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -71,6 +71,35 @@ img {
     height: 100%;
 }
 
+.title {
+    border-bottom: 5px solid var(--color-primary);
+    display: inline-block;
+}
+
+section {
+    /* background: rgb(7, 7, 7) */
+}
+
+hr {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    margin-bottom: 1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 0.5em
+}
+
+tr:nth-child(odd) {
+    background: #222;
+}
+
 
 /* nav */
 
@@ -93,7 +122,6 @@ nav {
     margin: 1rem;
 }
 
-
 #portrait {
     display: none;
 }
@@ -104,19 +132,18 @@ nav {
     flex-direction: column;
     padding: 0.5em 0 0 0;
     margin: 0;
-    background-color: var(--color-secondary)
-    
+    background-color: var(--color-secondary);
 }
 
 #navLinks li {
     font-size: 1.4em;
     margin: 1rem;
-    
 }
 
-.navLink{
+.navLink {
     padding: 0.5em 1em;
     border-radius: 2em;
+    text-decoration: none;
 }
 
 .navLink:hover {
@@ -183,6 +210,38 @@ main {
     position: relative;
 }
 
+
+/* Contact Me */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding: 1em 0
+}
+
+button {
+    all: unset;
+    text-align: center;
+}
+
+textarea {
+    margin: 1em 0;
+    resize: none;
+    height: 20em;
+}
+
+input[type=text],
+textarea {
+    background: rgba(54, 54, 54, 0.856);
+    border: none;
+    padding: 1em;
+    color: var(--text-color);
+    font-size: 16pt
+}
+
 @media only screen and (min-width: 850px) {
     #home-content {
         text-align: left;
@@ -212,7 +271,6 @@ main {
         align-items: center;
         background-color: var(--color-primary);
     }
-
     #menutoggle {
         display: none;
     }
@@ -236,5 +294,15 @@ main {
     }
     .logo:hover #portrait {
         opacity: 0.7;
+    }
+    .split {
+        display: flex;
+        gap: 1em;
+    }
+    .split>* {
+        flex-basis: 100%;
+    }
+    .reverse {
+        flex-direction: row-reverse;
     }
 }

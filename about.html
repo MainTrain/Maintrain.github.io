@@ -6,47 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ian Martin | About</title>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/style2.css">
 </head>
 
 <body>
     <nav>
-        <div class="container max-width row">
-            
-            <a class="logo" href="index.html">
-                Ian Martin
-                <img id="portrait" />
-            </a>
-            <ul class="row">
-                <li><a class="btn" href="about.html">About</a></li>
-                <li><a class="btn" href="academic.html">Academic Projects</a></li>
-                <li><a class="btn" href="personal.html">Personal Projects</a></li>
-                <li><a class="btn" href="contact.html">Contact Me</a></li>
+        <div class="container">
+            <div id="fixednav">
+                <a class="logo portrait-hover" href="index.html">
+                    <h1 class="lobster"> Ian Martin </h1>
+                    <img id="portrait" />
+                </a>
+                <button onclick="toggleMenu()" id="menutoggle">
+                    ☰
+                </button>
+            </div>
+    
+    
+            <ul id="navLinks">
+                <li><a class="navLink" href="about.html">About</a></li>
+                <li><a class="navLink" href="academic.html">Academic Projects</a></li>
+                <li><a class="navLink" href="personal.html">Personal Projects</a></li>
+                <li><a class="navLink" href="contact.html">Contact Me</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <div class="container fullheight">
-            <h1 class="title">About</h1>
+        <div class="container" >
+            <h1 class="title">About Me</h1>
 
-            <div class="row">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fuga esse magnam quia incidunt hic veniam repellendus nostrum et vero, cumque voluptate beatae ad nihil quis? Voluptatum consequatur quaerat earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque sint cum eligendi laudantium porro architecto culpa, obcaecati accusantium unde necessitatibus voluptate tempora molestiae est quaerat corrupti voluptatum dolorum sapiente.
-                </p>
-                <img class="about-img" src="/static/pic.jpg" alt="">
-            </div>
+            <section class="split">
+                <div>
+                    <img src="static/bigfish.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur enim esse aliquam, sed ipsam, sunt accusantium quia animi recusandae nulla itaque perspiciatis voluptatum voluptate quae iste provident nihil amet sequi? Praesentium magnam dolor necessitatibus iusto nulla consequatur perferendis facilis delectus commodi repellendus, enim minus sapiente ad corrupti reiciendis expedita esse maxime ex quis repudiandae labore voluptate neque aliquid eligendi. Id deserunt veniam sunt, odit expedita sapiente iusto ad? Quod earum, quo eligendi nostrum tempore aperiam consequuntur reprehenderit eum doloremque ad magnam quibusdam deserunt excepturi dignissimos sint molestiae corrupti ab modi aut optio ipsam doloribus porro tempora quasi. Esse, dicta.</p>
+                </div>
+            </section>
 
-            <div class="row">
-                <img class="about-img" src="/static/BigFish.jpg" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fuga esse magnam quia incidunt hic veniam repellendus nostrum et vero, cumque voluptate beatae ad nihil quis? Voluptatum consequatur quaerat earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque sint cum eligendi laudantium porro architecto culpa, obcaecati accusantium unde necessitatibus voluptate tempora molestiae est quaerat corrupti voluptatum dolorum sapiente.
-                </p>
-            </div>
-            
         </div>
     </main>
 
+
+    <script src="static/script.js"></script>
 </body>
 
 </html>
