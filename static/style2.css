@@ -48,7 +48,7 @@ img {
     text-decoration: none;
 }
 
-.btn:hover {
+.btn:hover,.btn-active {
     background-color: var(--text-color);
     color: var(--color-primary);
     cursor: pointer;
@@ -74,10 +74,13 @@ img {
 .title {
     border-bottom: 5px solid var(--color-primary);
     display: inline-block;
+    /* text-align: center; */
+    font-size: 2rem;
 }
 
 section {
-    /* background: rgb(7, 7, 7) */
+    align-items: center;
+    line-height: 1.5em
 }
 
 hr {
@@ -344,6 +347,7 @@ textarea {
     .split>* {
         flex-basis: 100%;
     }
+
     .reverse {
         flex-direction: row-reverse;
     }

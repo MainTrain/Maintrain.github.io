@@ -25,7 +25,7 @@
 
             <ul id="navLinks">
                 <li><a class="navLink" href="about.html">About</a></li>
-                <li><a class="navLink" href="academic.html">Academic Projects</a></li>
+                <li><a class="navLink btn-active" href="academic.html">Academic Projects</a></li>
                 <li><a class="navLink" href="personal.html">Personal Projects</a></li>
                 <li><a class="navLink" href="contact.html">Contact Me</a></li>
             </ul>
@@ -42,23 +42,25 @@
                 </div>
                 <div>
                     <h2>Formula SAE </h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur enim esse aliquam, sed ipsam, sunt accusantium quia animi recusandae nulla itaque perspiciatis voluptatum voluptate quae iste provident nihil amet sequi?
-                        Praesentium magnam dolor necessitatibus iusto nulla consequatur perferendis facilis delectus commodi repellendus, enim minus sapiente ad corrupti reiciendis expedita esse maxime ex quis repudiandae labore voluptate neque aliquid
-                        eligendi. Id deserunt veniam sunt, odit expedita sapiente iusto ad? Quod earum, quo eligendi nostrum tempore aperiam consequuntur reprehenderit eum doloremque ad magnam quibusdam deserunt excepturi dignissimos sint molestiae corrupti
-                        ab modi aut optio ipsam doloribus porro tempora quasi. Esse, dicta.</p>
+                    <p>I am currently working with ASU's Formula SAE Electric team on the development of their Firewall and Front Impact Attenuator systems. Using their chassis assembly in SolidWorks, I have designed a firewall that complies to all SAE rules,
+                        is lightweight, and is fully sealed to protect the driver from any electrical components in the event of an accident. The firewall consists of a 0.025" 5050-H32 Aluminum sheet, 30 Mil DuPont Nomex 410 paper, and utilizes 3M
+                        DP100FR Epoxy to bond the two materials together. The Nomex and 3M Epoxy are both UL94-V0 compliant which ensures that the firewall is both electrically insulating and nonflammable.
+                        <br><br> The Front Impact Attenuator protects the driver in the event of frontal collision. In the assembly shown, we utilize the standard design made of IMPAXX 700 foam supplied by Formula SAE, and it has only been modified to
+                        mount securely to the chassis. Additionally, we are currently developing an alternative, aluminum honeycomb attenuator for future revisions that will provide the same impact resistance while being smaller and lighter. </p>
                 </div>
             </section>
             <hr>
             <section class="split">
                 <div>
-                    <img src="static/BigFish.jpg" alt="">
+                    <img src="static/automotive.png" alt="">
                 </div>
                 <div>
                     <h2>Automotive Project</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequuntur enim esse aliquam, sed ipsam, sunt accusantium quia animi recusandae nulla itaque perspiciatis voluptatum voluptate quae iste provident nihil amet sequi?
-                        Praesentium magnam dolor necessitatibus iusto nulla consequatur perferendis facilis delectus commodi repellendus, enim minus sapiente ad corrupti reiciendis expedita esse maxime ex quis repudiandae labore voluptate neque aliquid
-                        eligendi. Id deserunt veniam sunt, odit expedita sapiente iusto ad? Quod earum, quo eligendi nostrum tempore aperiam consequuntur reprehenderit eum doloremque ad magnam quibusdam deserunt excepturi dignissimos sint molestiae corrupti
-                        ab modi aut optio ipsam doloribus porro tempora quasi. Esse, dicta.</p>
+                    <p>In this Automotive Project we were provided with a Matlab/SIMULINK model of a vehicle with a parallel through the road layout, and were tasked to make any changes necessary to improve both fuel economy and performance. Utilizing changes the  Internal Combustion Engine (ICE) model, I reduced the engine capacity from 3.4L to 3.0L by scaling the outputs appropriately to gain fuel economy and lose weight. Additionally, by changing the battery system to a Lithium-ion system I changed the battery management logic to allow a higher maximum state of charge, and a lower minimum state of charge. To further improve the MPG, a logical switch was added to minimize idling fuel consumption when the vehicle was at rest.
+                        <br><br> To gain back some lost performance, logic was added to run both the Electric Motor (EM) and ICE simultaneously when the PID registered a high accelerator input. Furthermore, the EM size was increased by scaling the outputs 1.5x to provide more torque at low speeds. These changes required tuning the PID controller by adjusting the proportional and integral controls to increased accuracy in the Federal Urban Driving Schedule speed trace. 
+                        <br><br>
+                        These changes resulted in a 45% reduction in the 0-60mph time, an 18% reduction in 50-70mph time, and 12% improvement in fuel economy. 
+                        </p>
                 </div>
             </section>
             <hr>
