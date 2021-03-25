@@ -28,6 +28,7 @@ body {
 body {
     background-image: url("background.jpg");
     color: var(--text-color);
+    background-color: black;
 }
 
 a {
