@@ -26,10 +26,10 @@ body {
 }
 
 body {
-background: radial-gradient(rgba(255, 255, 255, 0.05) 30%, transparent 0%) 0 0;
-background-color:black;
-background-size:5px 5px;
-color: var(--text-color);
+    background: radial-gradient(rgba(255, 255, 255, 0.05) 30%, transparent 0%) 0 0;
+    background-color: black;
+    background-size: 5px 5px;
+    color: var(--text-color);
 }
 
 a {
@@ -50,7 +50,8 @@ img {
     text-decoration: none;
 }
 
-.btn:hover,.btn-active {
+.btn:hover,
+.btn-active {
     background-color: var(--text-color);
     color: var(--color-primary);
     cursor: pointer;
@@ -349,7 +350,6 @@ textarea {
     .split>* {
         flex-basis: 100%;
     }
-
     .reverse {
         flex-direction: row-reverse;
     }
