@@ -48,6 +48,7 @@ img {
     white-space: nowrap;
     transition: ease 0.2s;
     text-decoration: none;
+    user-select: none;
 }
 
 .btn:hover,
@@ -55,6 +56,7 @@ img {
     background-color: var(--text-color);
     color: var(--color-primary);
     cursor: pointer;
+    opacity: 100%;
 }
 
 .accent {
@@ -269,14 +271,16 @@ textarea {
 
 .slideshow-btn-left {
     position: absolute;
-    left: 0;
+    left: 5px;
     top: 50%;
+    opacity: 50%;
 }
 
 .slideshow-btn-right {
     position: absolute;
-    right: 0;
+    right: 5px;
     top: 50%;
+    opacity: 50%;
 }
 
 .indicator {
